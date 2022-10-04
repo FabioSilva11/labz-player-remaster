@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Labz player - Reprodutor de vídeos</title>
+    
+    <meta name="keywords" content="Labz player - reprodutor de video universal para sketchware">
+    <meta name="description" content="Labz Video Player - Labz organização">
+    <link rel="icon" sizes="192x192" href="imagem/icon_player.png">
+    <title>Labz player</title>
+    <!--style.css-->
+    <link="" rel="icon" href="imagem/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plyr.css">
+    </head>
+    <body>
+        <center>
+        <div class="card text-center">
+            <img class="img"
+            src="img/player.png" 
+            width="100%">
+            <!-- video real -->
+            <video class="vid"
+            controls= "controls" 
+            id="player" 
+            tabindex="0" 
+            poster="img/log.png" 
+            loop="loop" 
+            src="" 
+            width="100%" >
+            </video>    
+        </center>
+        <script>
+            var container1 = document.querySelector('.img');
+            var container2 = document.querySelector('.vid');
+            container1.style.display = 'block';
+            container2.style.display = 'none';
+            
+            //time para exibir o player         
+            setTimeout(function(){
+            container1.style.display = 'none';
+            container2.style.display = 'block';
+            },5000);
+        </script>
+        
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const url = urlParams.get ("url");
+            if(url==null){
+            alert("URL não encontrada")
+            }else{
+            document.getElementById("player").src = url;
+            }
+       </script>
+<script src="js/plyr.js"></script>
+<script>
+    const player = new Plyr('#player');
+  </script>
+</body>
+</html>
