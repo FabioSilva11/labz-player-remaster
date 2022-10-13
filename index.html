@@ -9,7 +9,7 @@
     
     <meta name="keywords" content="Labz player - reprodutor de video universal para sketchware">
     <meta name="description" content="Labz Video Player - Labz organização">
-    <link rel="icon" sizes="192x192" href="imagem/icon_player.png">
+    <link rel="icon" sizes="192x192" href="img/icon_player.png">
     <title>Labz player</title>
     <!--style.css-->
     <link="" rel="icon" href="imagem/favicon.ico">
@@ -19,7 +19,7 @@
     <body>
         <center>
         <div class="card text-center">
-            <img class="img"
+            <img id="gmp"class="img"
             src="img/player.png" 
             width="100%">
             <!-- video real -->
@@ -49,10 +49,17 @@
         <script>
             const urlParams = new URLSearchParams(window.location.search);
             const url = urlParams.get ("url");
+            const card = urlParams.get ("card");
+            
             if(url==null){
             alert("URL não encontrada")
             }else{
             document.getElementById("player").src = url;
+            }
+            
+            if(card==null){
+            }else{
+            document.getElementById("gmp").src = card;
             }
        </script>
 <script src="js/plyr.js"></script>
