@@ -1,70 +1,409 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Labz player - Reprodutor de vídeos</title>
-    
-    <meta name="keywords" content="Labz player - reprodutor de video universal para sketchware">
-    <meta name="description" content="Labz Video Player - Labz organização">
-    <link rel="icon" sizes="192x192" href="img/icon_player.png">
-    <title>Labz player</title>
-    <!--style.css-->
-    <link="" rel="icon" href="imagem/favicon.ico">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/plyr.css">
-    </head>
-    <body>
-        <center>
-        <div class="card text-center">
-            <img id="gmp"class="img"
-            src="img/player.png" 
-            width="100%">
-            <!-- video real -->
-            <video class="vid"
-            controls= "controls" 
-            id="player" 
-            tabindex="0" 
-            poster="img/log.png" 
-            loop="loop" 
-            src="" 
-            width="100%" >
-            </video>    
-        </center>
-        <script>
-            var container1 = document.querySelector('.img');
-            var container2 = document.querySelector('.vid');
-            container1.style.display = 'block';
-            container2.style.display = 'none';
-            
-            //time para exibir o player         
-            setTimeout(function(){
-            container1.style.display = 'none';
-            container2.style.display = 'block';
-            },5000);
-        </script>
-        
-        <script>
-            const urlParams = new URLSearchParams(window.location.search);
-            const url = urlParams.get ("url");
-            const card = urlParams.get ("card");
-            
-            if(url==null){
-            alert("URL não encontrada")
-            }else{
-            document.getElementById("player").src = url;
-            }
-            
-            if(card==null){
-            }else{
-            document.getElementById("gmp").src = card;
-            }
-       </script>
-<script src="js/plyr.js"></script>
-<script>
-    const player = new Plyr('#player');
-  </script>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BLAZE READE</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- bootstrap cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header fixed-top">
+
+   <div class="container">
+
+      <div class="row align-items-center justify-content-between">
+<!--  Rôbo Crash Blaze Mágico-->
+         <a href="#" class="logo"><span>Robo crash</span>Blazer Reader</a>
+
+         <nav class="nav">
+            <a href="#home">home</a>
+            <a href="#about">sobre</a>
+            <a href="#courses">courses</a>
+            <a href="#pricing">preços</a>
+            <a href="#team">teme</a>
+            <a href="#blogs">blogs</a>
+         </nav>
+
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+      </div>
+
+   </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="container">
+
+      <div class="row align-items-center min-vh-100">
+
+         <div class="col-md-6">
+            <img src="images/scream1.jpg" class="w-100" alt="">
+         </div>
+
+         <div class="col-md-6 text-center text-md-left">
+            <span>compre agora nosso robo</span>
+            <h3>o melhor preço do mercado</h3>
+            <a href="https://pay.hotmart.com/P75272873V" class="link-btn">comprar agora</a>
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="container">
+
+      <div class="row align-items-center flex-wrap-reverse">
+
+         <div class="col-md-6">
+            <span>Sobre</span>
+            <h3>O que oferecemos?</h3>
+            <p>nosso robô conta com o sofisticado código de inteligência artificial que monitora todas as jogadas e tenta prever o melhor resultado para maximizar os seus ganhos</p>
+            <ul>
+               <li> <i class="far fa-check-square"></i> Sistema com inteligência artificial </li>
+               <li> <i class="far fa-check-square"></i> Sistema linpo é sem anúncios </li>
+               <li> <i class="far fa-check-square"></i> Taxa de acerto é de 99,5%</li>
+               <li> <i class="far fa-check-square"></i> Suporte sempre disponivel</li>
+            </ul>
+         </div>
+
+         <div class="col-md-6">
+            <img src="https://robocrashblazemagico.my.canva.site/images/b34a5b28dcd278b17ccd9a2856620068.png" class="w-100" alt="">
+         </div>   
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- counter section starts  -->
+
+<section class="counter">
+
+   <div class="container box-container">
+
+      <div class="box">
+         <h3>400+</h3>
+         <p>estão ganhando dinheiro agora</p>
+      </div>
+
+      <div class="box">
+         <h3>320+</h3>
+         <p>estão visitando essa pagina</p>
+      </div>
+
+      <div class="box">
+         <h3>10+</h3>
+         <p>pessoas estão entrando em nosso grupo agora </p>
+      </div>
+
+      <div class="box">
+         <h3>5600+</h3>
+         <p>clientes satisfeitos</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- counter section ends -->
+
+<!-- courses section starts  -->
+
+<section class="courses" id="courses">
+
+   <div class="heading">
+      <span>prints dos clientes</span>
+      <h3>confira</h3>
+   </div>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <div class="image">
+            <img src="https://eujeansantos.com/wp-content/uploads/2021/03/blaze-grafico.png" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> agora </span>
+               <span> <i class="fas fa-clock"></i> 1 hora </span>
+            </div>
+            <h3>minha appsta de teste deu boa asim como o aplicativo prévio </h3>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="https://i.ytimg.com/vi/o0DoBUCYrz0/maxresdefault.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> agora </span>
+               <span> <i class="fas fa-clock"></i> 1 hora </span>
+            </div>
+            <h3>ainda estou com uma banca de testes mas eu estou vendo os resultados</h3>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="https://i.ytimg.com/vi/xrQs0eEHOQY/maxresdefault.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> agora </span>
+               <span> <i class="fas fa-clock"></i> 1 hora </span>
+            </div>
+            <h3>o aplicativo é muito bonito e fácil de compreender parabéns ao desenvolvedor</h3>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="https://i.ytimg.com/vi/K_PZyGAlaZ8/maxresdefault.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> agora </span>
+               <span> <i class="fas fa-clock"></i> 1 hora </span>
+            </div>
+            <h3>excelente aplicativo estou ganhando gente podem comprar</h3>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="https://trademarketbrasil.com.br/wp-content/uploads/2022/07/blaze-apostas-grupo-com-98-de-a.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> agora </span>
+               <span> <i class="fas fa-clock"></i> 1 hora </span>
+            </div>
+            <h3>já estou a dois meses jogando e até agora não quebrei a minha banca só lucro compra em gente</h3>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="https://i.ytimg.com/vi/Z85ThSKBJCQ/maxresdefault.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> agora </span>
+               <span> <i class="fas fa-clock"></i> 1 hora </span>
+            </div>
+            <h3>depois de um saque de R$ 1000 da conta o que sobra isso kkkk</h3>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- courses section ends -->
+
+<!-- pricint section starts  -->
+
+<section class="pricing" id="pricing">
+
+   <div class="heading">
+      <span>compre agora mesmo</span>
+      <h3>nosso preço promocional para hoje por tempo limitado</h3>
+   </div>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <h3>promoção</h3>
+         <div class="price"><span>R$</span>99,99<span>/Só hoje</span></div>
+         <a href="https://pay.hotmart.com/P75272873V" class="link-btn">comprar</a>
+         <div class="list">
+            <p> <i class="fas fa-check"></i> sistema 100% confiavel </p>
+            <p> <i class="fas fa-check"></i> maximiza suas chances de ganho </p>
+            <p> <i class="fas fa-check"></i> layout inteligente </p>
+            <p> <i class="fas fa-check"></i> simples para você </p>
+            <p> <i class="fas fa-check"></i> qualidade do produto garantida </p>
+         </div>
+      </div>
+
+      
+
+   </div>
+
+</section>
+
+<!-- pricint section ends -->
+
+<!-- join us section starts  -->
+
+<section class="join">
+
+   <div class="container">
+
+      <div class="row align-items-center">
+         <div class="col-md-7">
+            <img src="https://robocrashblazemagico.my.canva.site/images/a61fe1c2f639618dd5f91f623036905b.jpg" class="w-100" alt="">
+         </div>
+         <div class="col-md-5 text-center text-md-left">
+            <span>CONHEÇA UM POUCO DO NOSSO ROBÔ !</span>
+            <h3>por apenas R$:99,99 você tera uma maquina de dinheiro mas suas mãos</h3>
+            <p>não espere para fazer amanhã o que você pode fazer hoje compre agora mesmo o nosso robô e comece a ganhar dinheiro hoje</p>
+
+
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- join us section ends -->
+
+<!-- team section starts  -->
+
+<section class="team" id="team">
+
+   
+
+</section>
+
+<!-- team section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+   <div class="heading">
+      <span>blogs</span>
+      <h3>posts</h3>
+   </div>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPSEOeYskFl3HCJkccbxGKX07Dlx2WQXZD9g&usqp=CAU" alt="">
+         </div>
+         <div class="content">
+            <a href="#" class="link">meu saldo atual nó paypal super feliz.</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+               <span> <i class="fas fa-user"></i> by admin </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjA7BWSTGjUua095Ns_PRff4mgTolkrMOdA&usqp=CAU" alt="">
+         </div>
+         <div class="content">
+            <a href="#" class="link">foto saiu meio ruim mas ta valendo.</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+               <span> <i class="fas fa-user"></i> by admin </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXOjtzllUEv40hKehgCn7N7JzElznSHvMprA&usqp=CAU" alt="">
+         </div>
+         <div class="content">
+            <a href="#" class="link">mais um saldo direto ta conta de um comprador .</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+               <span> <i class="fas fa-user"></i> by admin </span>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container container">
+
+      <div class="box">
+         <h3>links rapidos</h3>
+         <a href="#home"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="#about"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="#courses"> <i class="fas fa-angle-right"></i> courses</a>
+         <a href="#pricing"> <i class="fas fa-angle-right"></i> pricing</a>
+         <a href="#team"> <i class="fas fa-angle-right"></i> team</a>
+         <a href="#blogs"> <i class="fas fa-angle-right"></i> blogs</a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+      <div class="box">
+         <h3>newsletter</h3>
+         <p>inscreve-se</p>
+         <form action="">
+            <input type="email" name="" placeholder="enter your email" id="" class="email">
+            <input type="submit" value="subscribe" class="link-btn">
+         </form>
+      </div>
+
+   </div>
+
+   <p class="credit"> criado por <span>Sr Fabio silva</span> | all rights reserved! </p>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+<!-- custom js file link     -->
+<script src="js/script.js"></script>
+   
 </body>
 </html>
