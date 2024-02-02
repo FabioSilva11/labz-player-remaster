@@ -1,19 +1,48 @@
-Descrição de uso do "Labz Video Player":
+Certamente! Aqui está uma versão melhorada do seu arquivo README para o GitHub:
 
-O "Labz Video Player" é um reprodutor de vídeos desenvolvido pela Labz organização, projetado para fornecer uma experiência de visualização de vídeos universal e amigável. Com esse reprodutor, você pode desfrutar de seus vídeos favoritos com facilidade e sem complicações.
+```markdown
+# Labz Player - Reprodutor de Vídeos
 
-Para começar a usar o "Labz Video Player", siga os passos abaixo:
+Labz Player é um reprodutor de vídeos universal desenvolvido por Fabio silva (kirito dev), projetado para ser integrado a suas aplicações web
 
-1. Inserir o URL do vídeo: Para reproduzir um vídeo específico, você precisa fornecer o URL do vídeo desejado como parâmetro na URL da página. Por exemplo, você pode usar algo como "https://www.example.com/?url=SEU_URL_AQUI". Certifique-se de substituir "SEU_URL_AQUI" pelo URL real do vídeo que deseja assistir.
+## Visão Geral
 
-2. Reprodução automática: Uma vez que o URL do vídeo é fornecido, o reprodutor inicia automaticamente a reprodução do vídeo principal que está visível inicialmente na página. Se o seu navegador suportar a reprodução automática, o vídeo começará a ser reproduzido imediatamente. Caso contrário, você pode controlar a reprodução usando os controles padrão do reprodutor, que incluem play, pausa, controle de volume e ajuste de tempo.
+O Labz Player permite a reprodução de vídeos de forma fácil e eficiente, proporcionando uma experiência aprimorada aos usuários.
 
-3. Alternância para o segundo vídeo: Quando o vídeo principal termina de ser reproduzido, o "Labz Video Player" oculta o vídeo inicial e exibe outro reprodutor de vídeo oculto com a mesma imagem de capa. O segundo vídeo é carregado a partir do URL fornecido como parâmetro na URL da página. Dessa forma, você pode alternar facilmente entre diferentes vídeos sem a necessidade de recarregar a página.
+## Recursos Principais
 
-4. Controles avançados: O "Labz Video Player" é construído com o Plyr, uma biblioteca JavaScript para personalizar e melhorar a experiência de reprodução de vídeos. Ele oferece recursos avançados, como controles de qualidade, modo de tela cheia, legendas e muito mais, para aprimorar sua experiência de visualização.
+- Controles de reprodução intuitivos
+- Personalização do reprodutor
+- Suporte a URL dinâmica para reprodução de vídeos
+- Integração web
 
-Quem estiver interessado em obter uma versão melhorada do "Labz Video Player", pode adquiri-la através do Patreon do desenvolvedor. Acesse o link a seguir para mais informações e para apoiar o desenvolvedor: [https://www.patreon.com/KiritoDev](https://www.patreon.com/KiritoDev). Com sua contribuição, você pode ter acesso a recursos aprimorados, atualizações regulares e suporte contínuo para o reprodutor de vídeos.
+## Como Usar
 
-Lembre-se de que o "Labz Video Player" depende da compatibilidade do seu navegador com os formatos de vídeo e recursos utilizados. Caso você encontre problemas de reprodução, verifique se o seu navegador é compatível com os padrões de reprodução de vídeo utilizados no reprodutor.
+1. Incorpore o reprodutor em seus projetos do Sketchware.
+2. Personalize conforme suas necessidades.
+3. Integre URLs dinâmicas para reproduzir vídeos específicos.
 
-Aproveite ao máximo o "Labz Video Player" e desfrute de uma experiência perfeita ao assistir seus vídeos favoritos com este reprodutor intuitivo e versátil.
+## Exemplo de URL Dinâmica
+
+Você pode incorporar o Labz Player em seus projetos utilizando a URL dinâmica da seguinte maneira:
+
+```html
+https://seusite.com/player/?url=URL_DO_SEU_VIDEO&card=URL_DA_IMAGEM
+```
+
+Certifique-se de substituir `URL_DO_SEU_VIDEO` pela URL do vídeo desejado e `URL_DA_IMAGEM` pela URL da imagem do cartão.
+
+## Como Contribuir
+
+Sinta-se à vontade para contribuir para o desenvolvimento do Labz Player. Basta seguir estas etapas:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para sua contribuição: `git checkout -b sua-feature`.
+3. Faça suas alterações e faça commit: `git commit -m 'Adiciona sua-feature'`.
+4. Faça push para a branch: `git push origin sua-feature`.
+5. Abra um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+```
