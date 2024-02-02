@@ -42,4 +42,3 @@ Sinta-se à vontade para contribuir para o desenvolvimento do Labz Player. Basta
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-```
