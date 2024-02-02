@@ -1,6 +1,3 @@
-Certamente! Aqui está uma versão melhorada do seu arquivo README para o GitHub:
-
-```markdown
 # Labz Player - Reprodutor de Vídeos
 
 Labz Player é um reprodutor de vídeos universal desenvolvido por Fabio silva (kirito dev), projetado para ser integrado a suas aplicações web
