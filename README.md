@@ -15,7 +15,7 @@ O Labz Player permite a reprodução de vídeos de forma fácil e eficiente, pro
 
 ## Como Usar
 
-1. Incorpore o reprodutor em seus projetos do Sketchware.
+1. Incorpore o reprodutor em seus projetos.
 2. Personalize conforme suas necessidades.
 3. Integre URLs dinâmicas para reproduzir vídeos específicos.
 
